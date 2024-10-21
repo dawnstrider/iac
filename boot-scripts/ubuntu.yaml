@@ -1,8 +1,8 @@
 ---
-- name: Install HTOP
+- name: Install needrestart
   hosts: localhost
   tasks:
     - name: Install package
       ansible.builtin.package:
-        name: htop
+        name: needrestart
         state: present
