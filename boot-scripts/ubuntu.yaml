@@ -1,7 +1,8 @@
 ---
-- hosts: all
+- name: Install HTOP
+  hosts: all
   tasks:
-    - name: Install htop
-        ansible.builtin.package:
-          name: htop
-          state: present
+    - name: Install package
+      ansible.builtin.package:
+        name: htop
+        state: present
