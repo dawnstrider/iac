@@ -25,3 +25,7 @@
         append: true
         state: present
         createhome: false
+    - name: Set key for ansible user
+      ansible.posix.authorized_key:
+        user: ansible
+        key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQClBrJXxjvDaCYZ+/BcPa6+BPs7Rk4lXWZJY1fONjDk7+tJ6H/5AsaYPPkYzJ4907CowRM+FQ5/G7uxptXqY8YjngTCSCXpdFhsiCfwwSGpTTKLygxhXWhvkgHV+Y8HQ6awXJ8cjMg1dgReg9oxhuDTBlBEjYDZji0mesDcvdGrkRYE5viLLAOjqLV27oOLRjeGjKHBEie4nvxzpaZ2sMW78VumxzkOToAY5ZQVkGbEcSXctZr4RBYP/gtqfBKieifWgcXOtsyZjx3CjeyKsS4s0a0VzfOiuVmYV/Bblu5hZHO8EkIDQE0npyV71YqD3lBXbGjJ1SMmL9bReW4YpV8B hqs robot account
