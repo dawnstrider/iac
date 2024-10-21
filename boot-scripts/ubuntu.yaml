@@ -1,6 +1,6 @@
 ---
 - name: Install HTOP
-  hosts: all
+  hosts: localhost
   tasks:
     - name: Install package
       ansible.builtin.package:
