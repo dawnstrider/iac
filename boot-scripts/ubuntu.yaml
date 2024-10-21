@@ -23,8 +23,9 @@
         name: ansible
         groups: wheel
         append: true
+        system: true
         state: present
-        createhome: false
+        createhome: true
     - name: Set key for ansible user
       ansible.posix.authorized_key:
         user: ansible
